@@ -199,12 +199,6 @@ export default function Hero() {
         </div>
       </div>
 
-      <style jsx>{`
-        @keyframes scrollLine {
-          0%, 100% { opacity: 0.4; transform: scaleY(0); transform-origin: top; }
-          50% { opacity: 1; transform: scaleY(1); transform-origin: top; }
-        }
-      `}</style>
     </section>
   );
 }

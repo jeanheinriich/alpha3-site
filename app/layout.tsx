@@ -62,6 +62,12 @@ export default function RootLayout({
       className={`${bigShoulders.variable} ${cormorant.variable} ${epilogue.variable}`}
     >
       <body className="antialiased font-body bg-stone text-ink overflow-x-hidden">
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-brass focus:text-stone focus:font-body focus:text-sm focus:uppercase focus:tracking-wide"
+        >
+          Pular para o conteúdo
+        </a>
         {children}
       </body>
     </html>

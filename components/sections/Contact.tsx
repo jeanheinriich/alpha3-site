@@ -96,7 +96,7 @@ export default function Contact() {
             {/* Promessa */}
             <div className="border-l-2 border-brass pl-5">
               <p className="font-feature italic text-xl text-ink/80">
-                "Respondemos toda solicitação em até 2 horas úteis."
+                &ldquo;Respondemos toda solicitação em até 2 horas úteis.&rdquo;
               </p>
             </div>
           </AnimatedSection>

@@ -65,6 +65,11 @@ const config: Config = {
       transitionTimingFunction: {
         "expo-out": "cubic-bezier(0.16, 1, 0.3, 1)",
       },
+      fontWeight: {
+        "300": "300",
+        "800": "800",
+        "900": "900",
+      },
     },
   },
   plugins: [forms],

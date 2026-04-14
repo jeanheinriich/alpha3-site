@@ -136,6 +136,12 @@
   }
 }
 
+/* ─── Keyframes extras ──────────────────────────────────────── */
+@keyframes scrollLine {
+  0%, 100% { opacity: 0.4; transform: scaleY(0); transform-origin: top; }
+  50% { opacity: 1; transform: scaleY(1); transform-origin: top; }
+}
+
 /* ─── Reduced Motion ────────────────────────────────────────── */
 @media (prefers-reduced-motion: reduce) {
   .animate-on-scroll,
