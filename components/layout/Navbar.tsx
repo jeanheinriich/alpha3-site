@@ -28,7 +28,7 @@ export default function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
         scrolled
-          ? "bg-stone/95 backdrop-blur-sm border-b border-concrete shadow-sm"
+          ? "bg-ink/95 backdrop-blur-sm border-b border-ink-light shadow-md"
           : "bg-transparent"
       }`}
     >
@@ -39,11 +39,11 @@ export default function Navbar() {
         {/* Logo */}
         <Link
           href="#"
-          className="font-display font-800 text-xl lg:text-2xl tracking-tight text-ink uppercase"
+          className="font-display font-800 text-xl lg:text-2xl tracking-tight text-stone uppercase"
           aria-label="Alpha 3 — Início"
         >
           Alpha<span className="text-brass">3</span>
-          <span className="hidden sm:inline font-body font-300 text-steel text-xs ml-2 tracking-widest uppercase normal-case">
+          <span className="hidden sm:inline font-body font-300 text-stone/50 text-xs ml-2 tracking-widest uppercase normal-case">
             Engenharia
           </span>
         </Link>
@@ -54,7 +54,7 @@ export default function Navbar() {
             <li key={href}>
               <Link
                 href={href}
-                className="font-body text-sm text-steel hover:text-brass tracking-wide uppercase transition-colors duration-200"
+                className="font-body text-sm text-stone/70 hover:text-brass tracking-wide uppercase transition-colors duration-200"
               >
                 {label}
               </Link>
@@ -62,12 +62,12 @@ export default function Navbar() {
           ))}
         </ul>
 
-        {/* Desktop CTA */}
+        {/* Desktop CTA — âmbar com texto navy */}
         <a
           href={WA_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden lg:inline-flex items-center gap-2 px-5 py-2.5 bg-brass text-stone font-body text-xs font-medium tracking-widest uppercase btn-fill hover:text-stone transition-colors duration-200"
+          className="hidden lg:inline-flex items-center gap-2 px-5 py-2.5 bg-brass text-ink font-body text-xs font-medium tracking-widest uppercase btn-fill hover:text-stone transition-colors duration-200"
         >
           <svg
             aria-hidden="true"
@@ -84,7 +84,7 @@ export default function Navbar() {
         {/* Mobile menu button */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="lg:hidden p-2 text-ink"
+          className="lg:hidden p-2 text-stone"
           aria-label={menuOpen ? "Fechar menu" : "Abrir menu"}
           aria-expanded={menuOpen}
         >
@@ -108,9 +108,9 @@ export default function Navbar() {
         </button>
       </nav>
 
-      {/* Mobile menu */}
+      {/* Mobile menu — fundo navy */}
       <div
-        className={`lg:hidden overflow-hidden transition-all duration-300 bg-stone border-t border-concrete ${
+        className={`lg:hidden overflow-hidden transition-all duration-300 bg-ink border-t border-stone/10 ${
           menuOpen ? "max-h-96" : "max-h-0"
         }`}
       >
@@ -120,7 +120,7 @@ export default function Navbar() {
               <Link
                 href={href}
                 onClick={() => setMenuOpen(false)}
-                className="font-body text-sm text-ink hover:text-brass tracking-wide uppercase transition-colors duration-200 block py-1"
+                className="font-body text-sm text-stone/70 hover:text-brass tracking-wide uppercase transition-colors duration-200 block py-1"
               >
                 {label}
               </Link>
@@ -131,7 +131,7 @@ export default function Navbar() {
               href={WA_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 mt-2 px-5 py-3 bg-brass text-stone font-body text-xs font-medium tracking-widest uppercase"
+              className="inline-flex items-center gap-2 mt-2 px-5 py-3 bg-brass text-ink font-body text-xs font-medium tracking-widest uppercase"
             >
               Falar no WhatsApp
             </a>
