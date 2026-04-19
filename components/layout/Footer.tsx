@@ -16,7 +16,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-ink text-stone/70" role="contentinfo">
+    <footer className="bg-ink-light text-stone/70" role="contentinfo">
       <div className="max-w-site mx-auto px-6 lg:px-10 pt-16 pb-8">
         {/* Grid principal */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 pb-12 border-b border-stone/10">
