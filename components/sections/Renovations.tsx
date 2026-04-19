@@ -53,7 +53,7 @@ export default function Renovations() {
               <path
                 d="M 80 0 L 0 0 0 80"
                 fill="none"
-                stroke="#C2882B"
+                stroke="#EDA811"
                 strokeWidth="0.5"
               />
             </pattern>
@@ -65,7 +65,7 @@ export default function Renovations() {
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(135deg, transparent 60%, rgba(194,136,43,0.06) 60%)",
+              "linear-gradient(135deg, transparent 60%, rgba(237,168,17,0.06) 60%)",
           }}
         />
       </div>

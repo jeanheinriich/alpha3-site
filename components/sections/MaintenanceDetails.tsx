@@ -56,7 +56,7 @@ export default function MaintenanceDetails() {
   return (
     <section
       id="manutencao-tecnica"
-      className="bg-concrete noise-texture py-section"
+      className="bg-stone-dark noise-texture py-section"
       aria-labelledby="tech-heading"
     >
       <div className="max-w-site mx-auto px-6 lg:px-10">
