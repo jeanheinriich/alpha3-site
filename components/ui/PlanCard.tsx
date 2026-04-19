@@ -55,7 +55,7 @@ export default function PlanCard({
       {/* Badge recomendado */}
       {featured && (
         <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-brass px-4 py-1">
-          <p className="font-body text-xs font-medium tracking-widest uppercase text-stone">
+          <p className="font-body text-xs font-medium tracking-widest uppercase text-ink">
             Mais escolhido
           </p>
         </div>

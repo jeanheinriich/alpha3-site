@@ -65,7 +65,7 @@ export default function MaintenancePlans() {
   return (
     <section
       id="planos"
-      className="bg-stone-dark py-section overflow-hidden"
+      className="bg-white py-section overflow-hidden"
       aria-labelledby="plans-heading"
     >
       <div className="max-w-site mx-auto px-6 lg:px-10">
