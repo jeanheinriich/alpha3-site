@@ -4,13 +4,39 @@
 
 /* ─── Design Tokens ─────────────────────────────────────────── */
 :root {
-  --color-stone: #F4F0E8;
-  --color-ink: #131210;
-  --color-brass: #C2882B;
-  --color-concrete: #E5E0D6;
-  --color-steel: #6B6560;
-  --color-ink-light: #2A2824;
-  --color-brass-light: #D4A04A;
+  /* Brand */
+  --color-brand-navy:        hsl(213, 55%, 23%);  /* #1A3759 */
+  --color-brand-navy-dark:   hsl(213, 62%, 14%);  /* #0D2238 */
+  --color-brand-navy-mid:    hsl(213, 42%, 38%);  /* #365D84 */
+  --color-brand-navy-light:  hsl(213, 28%, 94%);  /* #E8F0F7 */
+
+  /* Acento */
+  --color-accent:            hsl(38, 85%, 52%);   /* #EDA811 */
+  --color-accent-hover:      hsl(38, 90%, 44%);   /* #D4920F */
+
+  /* Superfícies */
+  --color-white:             hsl(0, 0%, 100%);
+  --color-off-white:         hsl(213, 14%, 97%);  /* #F4F7FB */
+
+  /* Texto */
+  --color-text-primary:      hsl(213, 40%, 16%);  /* #172638 */
+  --color-text-secondary:    hsl(213, 22%, 42%);  /* #506A80 */
+  --color-text-muted:        hsl(213, 16%, 62%);  /* #849DB3 */
+
+  /* Borda */
+  --color-border:            hsl(213, 22%, 87%);  /* #CDDAE8 */
+
+  /* Sucesso */
+  --color-success:           hsl(142, 48%, 40%);  /* #348C5A */
+
+  /* Aliases para compatibilidade com Tailwind classes existentes */
+  --color-stone:    var(--color-off-white);
+  --color-ink:      var(--color-brand-navy);
+  --color-brass:    var(--color-accent);
+  --color-concrete: var(--color-border);
+  --color-steel:    var(--color-text-secondary);
+  --color-ink-light: var(--color-brand-navy-dark);
+  --color-brass-light: hsl(38, 80%, 62%);  /* #F2C34A */
 }
 
 /* ─── Base ───────────────────────────────────────────────────── */
@@ -35,8 +61,8 @@
   }
 
   ::selection {
-    background-color: var(--color-brass);
-    color: var(--color-stone);
+    background-color: var(--color-accent);
+    color: var(--color-brand-navy);
   }
 }
 

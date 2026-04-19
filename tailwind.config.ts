@@ -10,15 +10,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        stone: "#F4F0E8",
-        ink: "#131210",
-        brass: "#C2882B",
-        concrete: "#E5E0D6",
-        steel: "#6B6560",
-        "stone-dark": "#E8E3D9",
-        "ink-light": "#2A2824",
-        "brass-light": "#D4A04A",
-        "brass-dark": "#9E6E1E",
+        stone: "#F4F7FB",        // off-white com toque navy
+        ink: "#1A3759",          // navy primário da marca
+        brass: "#EDA811",        // âmbar — acento premium
+        concrete: "#CDDAE8",     // borda leve azul-acinzentada
+        steel: "#506A80",        // texto secundário azul-acinzentado
+        "stone-dark": "#E8F0F7", // navy-light — seções alternadas
+        "ink-light": "#0D2238",  // navy-dark — footer e hover
+        "brass-light": "#F2C34A", // âmbar claro
+        "brass-dark": "#D4920F", // âmbar escuro / hover
       },
       fontFamily: {
         display: ["var(--font-big-shoulders)", "sans-serif"],
