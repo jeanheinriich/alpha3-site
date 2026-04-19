@@ -5,7 +5,7 @@ import { type AnchorHTMLAttributes } from "react";
 
 const WA_BASE = "https://wa.me/5511XXXXXXXXXXX?text=";
 
-export type CTAVariant = "solid" | "ghost" | "whatsapp";
+export type CTAVariant = "solid" | "ghost" | "ghost-light" | "whatsapp";
 
 interface CTAButtonProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   variant?: CTAVariant;
@@ -72,8 +72,12 @@ export default function CTAButton({
     "group inline-flex items-center font-body font-medium tracking-wide uppercase transition-colors duration-300 cursor-pointer select-none";
 
   const variants: Record<CTAVariant, string> = {
-    solid: `${base} ${sizeCls} bg-brass text-stone btn-fill hover:text-stone border border-brass`,
+    // Âmbar com texto navy; hover preenche navy → texto branco
+    solid: `${base} ${sizeCls} bg-brass text-ink btn-fill hover:text-stone border border-brass`,
+    // Outline navy para fundos claros; hover preenche navy → texto branco
     ghost: `${base} ${sizeCls} bg-transparent text-ink border border-ink btn-fill hover:text-stone`,
+    // Outline branco para fundos navy; hover preenche off-white → texto navy
+    "ghost-light": `${base} ${sizeCls} bg-transparent text-stone border border-stone btn-fill-light hover:text-ink`,
     whatsapp: `${base} ${sizeCls} bg-[#25D366] text-white btn-fill hover:text-white border border-[#25D366]`,
   };
 
