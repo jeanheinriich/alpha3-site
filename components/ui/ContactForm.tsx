@@ -169,7 +169,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={state === "submitting"}
-        className="w-full px-6 py-4 bg-brass text-stone font-body text-sm font-medium tracking-widest uppercase btn-fill hover:text-stone transition-colors duration-200 disabled:opacity-60 disabled:cursor-not-allowed"
+        className="w-full px-6 py-4 bg-brass text-ink font-body text-sm font-medium tracking-widest uppercase btn-fill hover:text-stone transition-colors duration-200 disabled:opacity-60 disabled:cursor-not-allowed"
       >
         {state === "submitting" ? "Enviando..." : "Enviar mensagem"}
       </button>
