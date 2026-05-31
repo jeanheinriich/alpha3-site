@@ -4,6 +4,7 @@ import WhatsAppFAB from "@/components/ui/WhatsAppFAB";
 import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
 import ManutencaoPreventiva from "@/components/sections/ManutencaoPreventiva";
+import FachadasPrediais from "@/components/sections/FachadasPrediais";
 import Contact from "@/components/sections/Contact";
 
 export default function Home() {
@@ -14,7 +15,8 @@ export default function Home() {
         <Hero />
         <About />
         <ManutencaoPreventiva />
-        {/* FachadasPrediais e EngenhariaServicos adicionadas nas etapas seguintes */}
+        <FachadasPrediais />
+        {/* EngenhariaServicos adicionada na etapa seguinte */}
         <Contact />
       </main>
       <Footer />
