@@ -135,8 +135,8 @@ export default function Hero() {
             fill
             className="object-cover object-center"
             priority
-            quality={90}
-            sizes="45vw"
+            quality={82}
+            sizes="(max-width: 1024px) 0vw, 45vw"
           />
 
           {/* Overlay navy sutil para harmonizar com o lado esquerdo */}

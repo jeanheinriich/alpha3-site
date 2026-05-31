@@ -4,11 +4,9 @@ const WA_URL =
   "https://wa.me/5511955833244?text=Olá%2C+vim+pelo+site+da+Alpha+3+e+gostaria+de+um+orçamento.";
 
 const NAV_LINKS = [
-  { label: "Serviços", href: "#servicos" },
-  { label: "Planos de Manutenção", href: "#planos" },
-  { label: "Reformas", href: "#reformas" },
+  { label: "Manutenção", href: "#manutencao" },
   { label: "Fachadas", href: "#fachadas" },
-  { label: "Por que Alpha 3", href: "#diferenciais" },
+  { label: "Engenharia", href: "#engenharia" },
   { label: "Contato", href: "#contato" },
 ];
 
@@ -33,7 +31,7 @@ export default function Footer() {
               alto padrão em São Paulo.
             </p>
             <p className="font-body text-xs text-stone/30 tracking-widest uppercase">
-              CNPJ: XX.XXX.XXX/0001-XX
+              São Paulo — SP
             </p>
           </div>
 
