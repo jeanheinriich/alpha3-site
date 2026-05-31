@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import SplitTextReveal from "@/components/ui/SplitTextReveal";
 import CTAButton from "@/components/ui/CTAButton";
 
@@ -82,7 +83,7 @@ export default function Hero() {
             Manutenção predial, reformas e fachadas para quem não aceita menos.
           </p>
 
-          {/* CTAs: WhatsApp verde + outline branco */}
+          {/* CTAs */}
           <div
             ref={ctaRef}
             className="flex flex-wrap gap-4"
@@ -99,8 +100,8 @@ export default function Hero() {
             >
               Solicitar orçamento
             </CTAButton>
-            <CTAButton variant="ghost-light" href="#planos" size="lg">
-              Conheça os planos
+            <CTAButton variant="ghost-light" href="#manutencao" size="lg">
+              Conheça os serviços
             </CTAButton>
           </div>
 
@@ -116,7 +117,7 @@ export default function Hero() {
             />
           </div>
 
-          {/* Decorativo α3 — quase invisível, apenas textura */}
+          {/* Decorativo α3 */}
           <span
             className="absolute right-0 top-1/2 -translate-y-1/2 font-display font-900 text-[14rem] leading-none select-none pointer-events-none hidden xl:block"
             style={{ color: "rgba(255,255,255,0.04)" }}
@@ -126,78 +127,43 @@ export default function Hero() {
           </span>
         </div>
 
-        {/* Lado direito — navy escuro com padrão arquitetônico */}
+        {/* Lado direito — fotografia real do edifício */}
         <div className="relative hidden lg:block overflow-hidden">
+          <Image
+            src="/hero-building.png"
+            alt="Fachada de edifício corporativo moderno ao entardecer — Alpha 3 Engenharia"
+            fill
+            className="object-cover object-center"
+            priority
+            quality={90}
+            sizes="45vw"
+          />
+
+          {/* Overlay navy sutil para harmonizar com o lado esquerdo */}
           <div
-            className="absolute inset-0"
-            style={{
-              backgroundImage:
-                "linear-gradient(135deg, #0D2238 0%, #1A3759 40%, #0D2238 100%)",
-            }}
-          >
-            {/* Grid arquitetônico em âmbar sutil */}
-            <svg
-              className="absolute inset-0 w-full h-full opacity-10"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-            >
-              <defs>
-                <pattern
-                  id="grid"
-                  width="60"
-                  height="60"
-                  patternUnits="userSpaceOnUse"
-                >
-                  <path
-                    d="M 60 0 L 0 0 0 60"
-                    fill="none"
-                    stroke="#EDA811"
-                    strokeWidth="0.5"
-                  />
-                </pattern>
-              </defs>
-              <rect width="100%" height="100%" fill="url(#grid)" />
-            </svg>
+            className="absolute inset-0 pointer-events-none"
+            style={{ background: "rgba(13, 34, 56, 0.25)" }}
+            aria-hidden="true"
+          />
 
-            {/* Diagonal âmbar */}
-            <div
-              className="absolute inset-0"
-              style={{
-                background:
-                  "linear-gradient(145deg, transparent 55%, rgba(237, 168, 17, 0.07) 55%)",
-              }}
-              aria-hidden="true"
-            />
-
-            {/* Texto decorativo em branco fantasma */}
-            <div className="absolute bottom-12 left-8 right-8">
-              <p
-                className="font-display font-900 text-5xl uppercase tracking-tight leading-none"
-                style={{ color: "rgba(244,247,251,0.05)" }}
-              >
-                Construção
-                <br />
-                de Alto
-                <br />
-                Padrão
-              </p>
-            </div>
-
-            {/* Badge Est. 2010 em âmbar */}
-            <div className="absolute top-16 right-8 border border-brass/40 px-4 py-3">
-              <p className="font-body text-xs tracking-widest uppercase text-brass">
-                Est. 2010
-              </p>
-            </div>
+          {/* Badge Est. 2010 */}
+          <div className="absolute top-16 right-8 border border-brass/60 px-4 py-3 z-20 backdrop-blur-sm bg-ink/20">
+            <p className="font-body text-xs tracking-widest uppercase text-brass">
+              Est. 2010
+            </p>
           </div>
 
-          {/* Gradiente de fusão com lado esquerdo */}
+          {/* Gradiente de fusão com o lado esquerdo */}
           <div
-            className="absolute inset-y-0 left-0 w-20 pointer-events-none z-10"
-            style={{
-              background:
-                "linear-gradient(to right, #1A3759, transparent)",
-            }}
+            className="absolute inset-y-0 left-0 w-24 pointer-events-none z-10"
+            style={{ background: "linear-gradient(to right, #1A3759, transparent)" }}
+            aria-hidden="true"
+          />
+
+          {/* Gradiente de fusão inferior */}
+          <div
+            className="absolute bottom-0 left-0 right-0 h-32 pointer-events-none z-10"
+            style={{ background: "linear-gradient(to top, #0D2238, transparent)" }}
             aria-hidden="true"
           />
         </div>
