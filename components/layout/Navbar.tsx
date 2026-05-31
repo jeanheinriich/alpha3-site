@@ -7,10 +7,9 @@ const WA_URL =
   "https://wa.me/5511XXXXXXXXXXX?text=Olá%2C+vim+pelo+site+e+quero+um+orçamento";
 
 const NAV_LINKS = [
-  { label: "Serviços", href: "#servicos" },
-  { label: "Planos", href: "#planos" },
+  { label: "Manutenção", href: "#manutencao" },
   { label: "Fachadas", href: "#fachadas" },
-  { label: "Por que Alpha 3", href: "#diferenciais" },
+  { label: "Engenharia", href: "#engenharia" },
   { label: "Contato", href: "#contato" },
 ];
 
