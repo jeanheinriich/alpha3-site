@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 
 const WA_URL =
-  "https://wa.me/5511XXXXXXXXXXX?text=Olá%2C+vim+pelo+site+e+quero+um+orçamento";
+  "https://wa.me/5511955833244?text=Olá%2C+vim+pelo+site+da+Alpha+3+e+gostaria+de+um+orçamento.";
 
 const NAV_LINKS = [
   { label: "Manutenção", href: "#manutencao" },

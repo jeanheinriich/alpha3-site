@@ -2,7 +2,7 @@ import AnimatedSection from "@/components/ui/AnimatedSection";
 import ContactForm from "@/components/ui/ContactForm";
 
 const WA_URL =
-  "https://wa.me/5511XXXXXXXXXXX?text=Olá%2C+vim+pelo+site+e+quero+um+orçamento";
+  "https://wa.me/5511955833244?text=Olá%2C+vim+pelo+site+da+Alpha+3+e+gostaria+de+entrar+em+contato.";
 
 export default function Contact() {
   return (

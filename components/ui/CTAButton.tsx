@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { type AnchorHTMLAttributes } from "react";
 
-const WA_BASE = "https://wa.me/5511XXXXXXXXXXX?text=";
+const WA_BASE = "https://wa.me/5511955833244?text=";
 
 export type CTAVariant = "solid" | "ghost" | "ghost-light" | "whatsapp";
 

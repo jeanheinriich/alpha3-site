@@ -1,6 +1,6 @@
 import { type LucideIcon } from "lucide-react";
 
-const WA_BASE = "https://wa.me/5511XXXXXXXXXXX?text=";
+const WA_BASE = "https://wa.me/5511955833244?text=";
 
 interface ServiceItemCardProps {
   icon: LucideIcon;
