@@ -160,10 +160,14 @@ export default function Hero() {
             aria-hidden="true"
           />
 
-          {/* Gradiente de fusão inferior */}
+          {/* Gradiente de fusão inferior — começa em 40% do topo, cobre 60% da altura */}
           <div
-            className="absolute bottom-0 left-0 right-0 h-32 pointer-events-none z-10"
-            style={{ background: "linear-gradient(to top, #0D2238, transparent)" }}
+            className="absolute inset-x-0 bottom-0 pointer-events-none z-10"
+            style={{
+              top: "40%",
+              background:
+                "linear-gradient(to bottom, transparent 0%, hsl(213, 55%, 23%) 100%)",
+            }}
             aria-hidden="true"
           />
         </div>
